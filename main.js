@@ -20,7 +20,7 @@ function readURL(input) {
       document.getElementById("preview").src = e.target.result;
     };
     reader.readAsDataURL(input.files[0]);
-    document.querySelector("#createPic").style.display = "none";
+    document.querySelector(".btn-upload").style.display = "none";
   } else {
     document.getElementById("preview").src = "";
   }
@@ -41,7 +41,7 @@ function readURL1(input) {
       document.getElementById("preview1").src = e.target.result;
     };
     reader.readAsDataURL(input.files[0]);
-    document.querySelector("#createPic1").style.display = "none";
+    document.querySelector(".btn-upload1").style.display = "none";
   } else {
     document.getElementById("preview1").src = "";
   }
@@ -62,7 +62,7 @@ function readURL2(input) {
       document.getElementById("preview2").src = e.target.result;
     };
     reader.readAsDataURL(input.files[0]);
-    document.querySelector("#createPic2").style.display = "none";
+    document.querySelector(".btn-upload2").style.display = "none";
   } else {
     document.getElementById("preview2").src = "";
   }
@@ -83,7 +83,7 @@ function readURL3(input) {
       document.getElementById("preview3").src = e.target.result;
     };
     reader.readAsDataURL(input.files[0]);
-    document.querySelector("#createPic3").style.display = "none";
+    document.querySelector(".btn-upload3").style.display = "none";
   } else {
     document.getElementById("preview3").src = "";
   }
