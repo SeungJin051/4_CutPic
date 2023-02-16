@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="photos">
+            <div id="image1" class="photo-frame">
+                <label for="createPic">
+                    <div class="btn-upload">첫번째 사진 업로드하기</div>
+                </label>
+                <input name="createPic" class="select-Pic" id="createPic" type="file" onchange="readURL(this);">
+                <img id="preview" />
+
+            </div>
+            <div id="image2" class="photo-frame">
+                <label for="createPic1">
+                    <div class="btn-upload">두번째 사진 업로드하기</div>
+                </label>
+                <input class="select-Pic" id="createPic1" type="file" onchange="readURL1(this);">
+                <img id="preview1" />
+            </div>
+            <div id="image3" class="photo-frame">
+                <label for="createPic2">
+                    <div class="btn-upload">세번째 사진 업로드하기</div>
+                </label>
+                <input class="select-Pic" id="createPic2" type="file" onchange="readURL2(this);">
+                <img id="preview2" />
+            </div>
+            <div id="image4" class="photo-frame">
+                <label for="createPic3">
+                    <div class="btn-upload">네번째 사진 업로드하기</div>
+                </label>
+                <input class="select-Pic" id="createPic3" type="file" onchange="readURL3(this);">
+                <img id="preview3" />
+            </div>
+        </div>
+        <div class="footer">
+            <div class="f-title">
+                <input id="text" type="text" onchange="printText()" maxlength="20" placeholder="comment." />
+                <div id='result'></div>
+            </div>
+            <p class="f-date"></p>
+        </div>
+    </div>
+
+</body>
+<script src="main.js"></script>
+
+</html>
